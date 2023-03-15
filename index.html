@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>New Project</title>
+        <title>Countdowns</title>
         <meta name="viewport" content="width=device-width">
         <link href="index.css" type="text/css" rel="stylesheet">
-        <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js" defer></script> -->
-        <!-- <script src="index.js" defer></script> -->
+        <script src="index.js" defer></script>
     </head>
     <body>
+		<div id=choose>
+			<h1>Countdown</h1>
+			<input type=date id=date />
+			<br>
+			<button onclick="start_countdown();" id=submit-button>Submit</button>
+		</div>
+		<div id=countdown class=hidden>
+			<span id=timer></span>
+		</div>
     </body>
 </html>
